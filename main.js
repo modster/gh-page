@@ -1,7 +1,10 @@
 import './style.css';
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// import * as THREE from 'three';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import * as THREE from 'https://unpkg.com/three@0.138.3/build/three.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.138.3/examples/jsm/controls/OrbitControls.js';
 
+const controls = new OrbitControls( camera, renderer.domElement );
 // Setup
 
 const scene = new THREE.Scene();
